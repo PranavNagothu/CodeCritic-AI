@@ -20,6 +20,8 @@ gitpython
 beautifulsoup4
 pygments
 requests
+fastapi
+uvicorn[standard]
 
 # Vector Databases
 faiss-cpu
@@ -27,10 +29,6 @@ langchain-chroma
 
 # MCP (Model Context Protocol)
 mcp>=1.0.0
-
-# CrewAI Multi-Agent Framework
-crewai>=0.80.0
-crewai-tools>=0.12.0
 
 # Code Refactoring Tools
 rope>=1.13.0
