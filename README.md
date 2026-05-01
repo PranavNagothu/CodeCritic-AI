@@ -1,5 +1,5 @@
 ---
-title: Code Crawler
+title: CodeCritic
 emoji: 🕷️
 colorFrom: blue
 colorTo: purple
@@ -8,7 +8,7 @@ pinned: false
 license: apache-2.0
 ---
 
-# 🕷️ Code Crawler - AI Codebase Agent
+# 🧠 CodeCritic AI
 
 An AI-powered codebase assistant that understands your code and helps you navigate, analyze, and modify it.
 

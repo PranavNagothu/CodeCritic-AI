@@ -1,8 +1,8 @@
-# Changelog - Code Chatbot Enhancements
+# Changelog - CodeCritic AI
 
 ## Summary of Changes
 
-All updates have been completed to match Sage's technical depth and functionality.
+All updates have been completed to build CodeCritic AI's full feature set.
 
 ### ✅ 1. Enhanced Chunking (`code_chatbot/chunker.py`)
 - **Token-aware chunking** using `tiktoken` (accurate token counting)
@@ -17,7 +17,7 @@ All updates have been completed to match Sage's technical depth and functionalit
 
 ### ✅ 3. Enhanced RAG Engine (`code_chatbot/rag.py`)
 - **History-aware retrieval** - contextualizes queries based on chat history
-- **Improved prompts** matching Sage's style
+- **Improved prompts** tuned for code analysis accuracy
 - **Source citations** - returns file paths and URLs with answers
 - **Conversation memory** - maintains chat history for context
 
@@ -54,7 +54,7 @@ All updates have been completed to match Sage's technical depth and functionalit
 - **Enhanced chat interface** - user/assistant avatars, labels
 - **Expandable context** - shows retrieved sources
 - **AST graph stats** - displays node count
-- **Better styling** - matches Sage's clean design
+- **Better styling** - clean, modern dark UI
 
 ### ✅ 9. Dependencies (`requirements.txt`)
 - Added `gitpython` for GitHub cloning
@@ -78,7 +78,7 @@ All updates have been completed to match Sage's technical depth and functionalit
 - `code_chatbot/ast_analysis.py` - Better relationship tracking
 - `code_chatbot/graph_rag.py` - Improved graph expansion
 - `backend/main.py` - Universal ingestion support
-- `frontend/app/page.tsx` - Sage-style UI
+- `frontend/app/page.tsx` - Redesigned CodeCritic AI chat UI
 - `frontend/lib/api.ts` - Updated API calls
 - `requirements.txt` - Added dependencies
 

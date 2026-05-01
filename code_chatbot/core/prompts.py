@@ -1,8 +1,8 @@
-# prompts.py - Enhanced Prompts for Code Chatbot
-# Inspired by CodeFalcon
+# prompts.py - Enhanced Prompts for CodeCritic AI
+# Prompt templates for CodeCritic AI chat engine
 
 # =============================================================================
-# SPECIFICATION TEMPLATES (CodeFalcon)
+# SPECIFICATION TEMPLATES
 # =============================================================================
 
 PO_FRIENDLY_TEMPLATE = """You are a Product Manager creating specifications for stakeholders.
@@ -203,11 +203,11 @@ def get_spec_template(spec_type: str) -> str:
 
 
 # =============================================================================
-# EXISTING SYSTEM PROMPTS (Updated with CodeFalcon Style)
+# SYSTEM PROMPTS
 # =============================================================================
 
 # Replacing SYSTEM_PROMPT_AGENT with a modified CHAT_SYSTEM_PROMPT
-SYSTEM_PROMPT_AGENT = """You are Codebase Agent (powered by CodeFalcon intelligence), specialized in understanding and explaining codebases.
+SYSTEM_PROMPT_AGENT = """You are CodeCritic AI, specialized in understanding and explaining codebases.
 
 You are interacting with the codebase: {repo_name}
 
@@ -230,9 +230,9 @@ Your responsibilities:
 - Explain technical concepts clearly
 """
 
-# Replacing SYSTEM_PROMPT_LINEAR_RAG with CodeFalcon's CHAT_SYSTEM_PROMPT
+# System prompt for linear RAG mode
 # Note: Removed {chat_history} placeholder as it is handled by the message list
-SYSTEM_PROMPT_LINEAR_RAG = """You are Codebase Agent (powered by CodeFalcon prompts), specialized in understanding and explaining codebases.
+SYSTEM_PROMPT_LINEAR_RAG = """You are CodeCritic AI, specialized in understanding and explaining codebases.
 
 You have access to the codebase: {repo_name}
 

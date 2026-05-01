@@ -1,5 +1,5 @@
 """
-FastAPI Application - Codebase Chatbot API
+FastAPI Application - CodeCritic AI API
 
 This module provides a REST API for the codebase chatbot functionality.
 Run with: uvicorn api.main:app --reload --port 8000
@@ -22,7 +22,7 @@ from api.routes import chat, index, health
 
 # Create FastAPI app
 app = FastAPI(
-    title="Codebase Chatbot API",
+    title="CodeCritic AI API",
     description="""
     A REST API for chatting with your codebase using RAG and agentic workflows.
     
@@ -64,7 +64,7 @@ app.include_router(chat.router, prefix="/api", tags=["Chat"])
 async def root():
     """Root endpoint with API information"""
     return {
-        "message": "Codebase Chatbot API",
+        "message": "CodeCritic AI API",
         "version": "1.0.0",
         "docs": "/docs",
         "health": "/api/health",

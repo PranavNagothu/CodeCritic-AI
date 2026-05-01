@@ -6,13 +6,13 @@ build-backend = "setuptools.build_meta"
 line-length = 120
 
 [project]
-name = "storia-sage"
+name = "codecritic-ai"
 version = "0.1.0"
-description = "A library to index a code repository and chat with it via LLMs."
+description = "CodeCritic AI — an AI-powered platform for large-scale code analysis using RAG, vector search, and distributed pipelines."
 readme = "README.md"
 requires-python = ">=3.9,<=3.11"
 authors = [
-    { name = "Julia Turc", email = "founders@storia.ai" },
+    { name = "Pranav Nagothu", email = "pnagothu@example.com" },
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -69,11 +69,11 @@ dependencies = [
 dev = ["black"]
 
 [project.scripts]
-sage-index = "sage.index:main"
-sage-chat = "sage.chat:main"
+codecritic-index = "code_chatbot.ingestion.indexer:main"
+codecritic-chat = "code_chatbot.retrieval.rag:main"
 
 [tool.setuptools.package-data]
-"sage" = ["sample-exclude.txt"]
+"code_chatbot" = ["sample-exclude.txt"]
 
 [tool.setuptools.packages]
 find = {}

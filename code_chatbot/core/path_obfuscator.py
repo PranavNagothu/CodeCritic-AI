@@ -2,7 +2,7 @@
 Path obfuscation module for privacy-preserving codebase indexing.
 
 Implements HMAC-based path component hashing to mask sensitive file paths
-while preserving directory structure for retrieval. Inspired by Cursor's
+while preserving directory structure for retrieval.
 privacy features.
 """
 

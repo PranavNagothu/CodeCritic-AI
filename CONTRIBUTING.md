@@ -1,5 +1,5 @@
-# Contributing to Codebase Agent
-Thank you for considering contributing to Codebase Agent! We welcome all kinds of contributions.
+# Contributing to CodeCritic AI
+Thank you for considering contributing to CodeCritic AI! We welcome all kinds of contributions.
 
 ## Ways to contribute
 We welcome your help in multiple directions. Feel free to pick the one that best matches your skills and interest:
@@ -19,7 +19,7 @@ For code contributions in particular, we suggest the following workflow:
 - If you are addressing an existing issue or feature request, make sure to reference it under the "Development" section of the pull request.
 
 ### Non-code contributions
-- If you simply have suggestions for improvement or marketing materials, let us know via [Discord](https://discord.gg/zbtZe7GcVU).
+- If you simply have suggestions for improvement, feel free to open an issue on GitHub.
 
 ## Hacktoberfest 2024
 We welcome Hacktoberfest contributions for all the items above. Issues that we consider particularly beginner-friendly are marked with the "hacktoberfest" label.

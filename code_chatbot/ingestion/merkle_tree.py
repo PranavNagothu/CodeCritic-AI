@@ -1,7 +1,7 @@
 """
 Merkle Tree implementation for efficient codebase change detection.
 
-Inspired by Cursor's approach to incremental indexing, this module builds
+This module builds
 a cryptographic hash tree of the codebase to quickly identify which files
 have changed since the last indexing operation.
 """

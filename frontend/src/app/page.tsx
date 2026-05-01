@@ -54,7 +54,7 @@ export default function HomePage() {
         </motion.div>
 
         <h1 className="text-4xl font-bold bg-gradient-to-r from-sky-400 to-violet-400 bg-clip-text text-transparent mb-4">
-          Code Crawler
+          CodeCritic AI
         </h1>
         <p className="text-slate-400 text-lg max-w-md">
           AI-powered codebase assistant. Upload your project and start exploring.

@@ -12,8 +12,7 @@ A clear and concise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
-1. Install `sage` via...
-2. Run indexing via `sage-index ...`
+2. Run the app via `./start.sh` or `./venv/bin/streamlit run app.py`
 3. etc
 
 **Expected behavior**

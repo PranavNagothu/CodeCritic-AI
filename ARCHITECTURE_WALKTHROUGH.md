@@ -1,4 +1,4 @@
-# 🕷️ Code Crawler - Complete Architecture Walkthrough
+# 🧠 CodeCritic AI - Complete Architecture Walkthrough
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -16,7 +16,7 @@
 
 ## Project Overview
 
-**Code Crawler** is an AI-powered codebase assistant that combines multiple advanced techniques:
+**CodeCritic AI** is an AI-powered codebase assistant that combines multiple advanced techniques:
 
 - **RAG (Retrieval-Augmented Generation)**: Vector-based semantic search over code
 - **AST Analysis**: Abstract Syntax Tree parsing for understanding code structure
@@ -38,7 +38,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                            CODE CRAWLER SYSTEM                               │
+│                            CODECRITIC AI SYSTEM                               │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                              │
 │  ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐        │

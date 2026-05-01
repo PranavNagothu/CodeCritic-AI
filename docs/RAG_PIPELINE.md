@@ -1,4 +1,4 @@
-# How Codebase Agent Indexes Your Codebase
+# How CodeCritic AI Indexes Your Codebase
 
 **A deep dive into the RAG pipeline that powers intelligent code understanding**
 
@@ -6,7 +6,7 @@
 
 ## Overview
 
-Codebase Agent uses a sophisticated Retrieval-Augmented Generation (RAG) pipeline to build a deep understanding of your codebase. Unlike simple text search tools, our system combines:
+CodeCritic AI uses a sophisticated Retrieval-Augmented Generation (RAG) pipeline to build a deep understanding of your codebase. Unlike simple text search tools, our system combines:
 
 - **Semantic code chunking** using Abstract Syntax Trees (AST)
 - **Efficient change detection** with Merkle trees
@@ -358,7 +358,7 @@ Our prompts include:
 
 ## Comparison with Cursor
 
-| Feature | Codebase Agent | Cursor |
+| Feature | CodeCritic AI | Cursor |
 |---------|----------------|--------|
 | **AST-based chunking** | ✅ Tree-sitter | ✅ Tree-sitter |
 | **Merkle tree change detection** | ✅ | ✅ |
@@ -402,7 +402,7 @@ EMBEDDING_PROVIDER=gemini
 LLM_PROVIDER=gemini
 ```
 
-See [`code_chatbot/config.py`](file:///Users/asishkarthikeyagogineni/Desktop/Codebase_Agent/code_chatbot/config.py) for full configuration options.
+See [`code_chatbot/config.py`](https://github.com/PranavNagothu/CodeCritic-AI/code_chatbot/config.py) for full configuration options.
 
 ---
 
@@ -410,13 +410,13 @@ See [`code_chatbot/config.py`](file:///Users/asishkarthikeyagogineni/Desktop/Cod
 
 | Component | File | Description |
 |-----------|------|-------------|
-| **Chunking** | [`chunker.py`](file:///Users/asishkarthikeyagogineni/Desktop/Codebase_Agent/code_chatbot/chunker.py) | AST-based semantic chunking |
-| **Merkle Tree** | [`merkle_tree.py`](file:///Users/asishkarthikeyagogineni/Desktop/Codebase_Agent/code_chatbot/merkle_tree.py) | Change detection |
-| **Path Obfuscation** | [`path_obfuscator.py`](file:///Users/asishkarthikeyagogineni/Desktop/Codebase_Agent/code_chatbot/path_obfuscator.py) | Privacy features |
-| **Indexing** | [`indexer.py`](file:///Users/asishkarthikeyagogineni/Desktop/Codebase_Agent/code_chatbot/indexer.py) | Vector database operations |
-| **Incremental Indexing** | [`incremental_indexing.py`](file:///Users/asishkarthikeyagogineni/Desktop/Codebase_Agent/code_chatbot/incremental_indexing.py) | Merkle tree integration |
-| **Configuration** | [`config.py`](file:///Users/asishkarthikeyagogineni/Desktop/Codebase_Agent/code_chatbot/config.py) | Centralized settings |
-| **Retrieval** | [`retriever_wrapper.py`](file:///Users/asishkarthikeyagogineni/Desktop/Codebase_Agent/code_chatbot/retriever_wrapper.py) | Reranking & multi-query |
+| **Chunking** | [`chunker.py`](https://github.com/PranavNagothu/CodeCritic-AI/code_chatbot/chunker.py) | AST-based semantic chunking |
+| **Merkle Tree** | [`merkle_tree.py`](https://github.com/PranavNagothu/CodeCritic-AI/code_chatbot/merkle_tree.py) | Change detection |
+| **Path Obfuscation** | [`path_obfuscator.py`](https://github.com/PranavNagothu/CodeCritic-AI/code_chatbot/path_obfuscator.py) | Privacy features |
+| **Indexing** | [`indexer.py`](https://github.com/PranavNagothu/CodeCritic-AI/code_chatbot/indexer.py) | Vector database operations |
+| **Incremental Indexing** | [`incremental_indexing.py`](https://github.com/PranavNagothu/CodeCritic-AI/code_chatbot/incremental_indexing.py) | Merkle tree integration |
+| **Configuration** | [`config.py`](https://github.com/PranavNagothu/CodeCritic-AI/code_chatbot/config.py) | Centralized settings |
+| **Retrieval** | [`retriever_wrapper.py`](https://github.com/PranavNagothu/CodeCritic-AI/code_chatbot/retriever_wrapper.py) | Reranking & multi-query |
 
 ---
 
@@ -428,6 +428,6 @@ See [`code_chatbot/config.py`](file:///Users/asishkarthikeyagogineni/Desktop/Cod
 - **Explore metadata filtering**: Filter by language, complexity, etc.
 
 For more details, see:
-- [Architecture Overview](file:///Users/asishkarthikeyagogineni/Desktop/Codebase_Agent/docs/ARCHITECTURE.md)
-- [Configuration Guide](file:///Users/asishkarthikeyagogineni/Desktop/Codebase_Agent/code_chatbot/config.py)
-- [API Reference](file:///Users/asishkarthikeyagogineni/Desktop/Codebase_Agent/README.md)
+- [Architecture Overview](https://github.com/PranavNagothu/CodeCritic-AI/docs/ARCHITECTURE.md)
+- [Configuration Guide](https://github.com/PranavNagothu/CodeCritic-AI/code_chatbot/config.py)
+- [API Reference](https://github.com/PranavNagothu/CodeCritic-AI/README.md)

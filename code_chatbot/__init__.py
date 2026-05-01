@@ -1,5 +1,5 @@
 """
-Code Chatbot - AI-powered codebase assistant.
+CodeCritic AI - AI-powered codebase analysis platform.
 """
 
 # Keep imports minimal to avoid circular imports

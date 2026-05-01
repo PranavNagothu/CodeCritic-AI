@@ -1,4 +1,4 @@
-"""Enhanced chunker with proper token counting and merging strategies, inspired by Sage."""
+"""Enhanced chunker with proper token counting and AST-based structural merging strategies."""
 
 import logging
 import os

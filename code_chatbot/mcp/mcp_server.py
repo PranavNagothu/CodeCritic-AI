@@ -348,7 +348,7 @@ class RefactorMCPServer:
 # Example usage
 if __name__ == "__main__":
     # Create server
-    server = RefactorMCPServer("/Users/asishkarthikeyagogineni/Desktop/Codebase_Agent")
+    server = RefactorMCPServer(os.environ.get("WORKSPACE_ROOT", "."))
     
     # Test code search
     results = server.code_search("def.*index", file_pattern="**/*.py")

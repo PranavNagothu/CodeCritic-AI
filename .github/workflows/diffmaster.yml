@@ -12,8 +12,8 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - name: DiffMaster Review
-        uses: Asishkarthikeya/DiffMaster@main
+      - name: AI Code Review
+        uses: PranavNagothu/DiffMaster@main
         with:
           gemini_api_key: ${{ secrets.GEMINI_API_KEY }}
           groq_api_key: ${{ secrets.GROQ_API_KEY }}

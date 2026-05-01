@@ -1,5 +1,5 @@
 """
-Multi-mode interface components for Codebase Agent.
+Multi-mode interface components for CodeCritic AI.
 
 Provides different interaction modes: Chat, Search, Refactor, Generate
 """

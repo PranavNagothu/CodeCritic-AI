@@ -13,7 +13,7 @@ class AgentState(TypedDict):
 
 def create_agent_graph(llm, retriever, repo_name: str = "Codebase", repo_dir: str = ".", provider: str = "gemini", code_analyzer=None):
     """
-    Creates a LangGraph for the Code Chatbot.
+    Creates a LangGraph for CodeCritic AI.
     Enables: Search -> Read File -> Reason -> Search -> Answer.
     Uses adaptive rate limiting to maximize usage within free tier.
     """

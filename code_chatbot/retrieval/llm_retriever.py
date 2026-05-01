@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 class LLMRetriever(BaseRetriever):
     """
     Retriever that uses an LLM to select relevant files from the project structure.
-    Adapted from generic Sage implementation to work with LangChain models.
+    Uses LangChain models to identify relevant files from the repo structure.
     """
     
     llm: BaseChatModel

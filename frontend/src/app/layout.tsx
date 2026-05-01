@@ -66,7 +66,7 @@ function Sidebar() {
           </div>
           <div>
             <h1 className="font-bold text-lg text-white tracking-tight font-display">
-              CodeFalcon
+              CodeCritic AI
             </h1>
             <p className="text-[10px] uppercase tracking-widest text-cyan-400 font-semibold">
               Agent V2.0

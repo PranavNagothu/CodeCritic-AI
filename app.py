@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Basic Setup
-st.set_page_config(page_title="Code Chatbot", page_icon="💻", layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="CodeCritic AI", page_icon="🧠", layout="wide", initial_sidebar_state="collapsed")
 logging.basicConfig(level=logging.INFO)
 
 # --- Custom CSS for Premium Slate UI ---
@@ -46,7 +46,7 @@ embedding_api_key = config["embedding_api_key"]
 # MAIN 3-PANEL LAYOUT
 # ============================================================================
 
-st.title("🕷️ Code Crawler")
+st.title("🧠 CodeCritic AI")
 
 if not st.session_state.processed_files:
     # Show onboarding message when no files are processed
