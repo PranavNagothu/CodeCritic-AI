@@ -3,8 +3,9 @@
 import { motion } from 'framer-motion';
 import { useState, useCallback } from 'react';
 import { Upload, Folder, Github, ArrowRight, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
-import { api } from '@/lib/api';
 import { useRouter } from 'next/navigation';
+
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 type SourceMode = 'zip' | 'github';
 type Status = 'idle' | 'uploading' | 'success' | 'error';
@@ -29,7 +30,12 @@ export default function HomePage() {
     const interval = setInterval(() => setProgress(p => Math.min(p + 5, 85)), 400);
 
     try {
-      await api.index(githubUrl.trim());
+      const res = await fetch(`${API_BASE}/api/index`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ source: githubUrl.trim(), provider: 'gemini', use_agent: true }),
+      });
+      if (!res.ok) throw new Error(await res.text());
       clearInterval(interval);
       setProgress(100);
       setStatus('success');
@@ -54,7 +60,11 @@ export default function HomePage() {
     const interval = setInterval(() => setProgress(p => Math.min(p + 5, 85)), 400);
 
     try {
-      await api.indexZip(file);
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('provider', 'gemini');
+      const res = await fetch(`${API_BASE}/api/index`, { method: 'POST', body: formData });
+      if (!res.ok) throw new Error(await res.text());
       clearInterval(interval);
       setProgress(100);
       setStatus('success');

@@ -3,8 +3,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
 import { Send, Bot, User, FileCode, Sparkles } from 'lucide-react';
-import { api } from '@/lib/api';
 
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 interface Message {
     id: string;
     role: 'user' | 'assistant';
@@ -41,7 +41,12 @@ export default function ChatPage() {
         setIsLoading(true);
 
         try {
-            const data = await api.chat(input);
+            const res = await fetch(`${API_BASE}/api/chat`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ question: input, provider: 'gemini', use_agent: true }),
+            });
+            const data = await res.json();
 
             const assistantMessage: Message = {
                 id: (Date.now() + 1).toString(),
