@@ -4,7 +4,7 @@
   publish = ".next"
 
 [build.environment]
-  NEXT_PUBLIC_API_URL = "https://codecritic-api.onrender.com"
+  NEXT_PUBLIC_API_URL = "https://codecritic-ai-8k9a.onrender.com"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"

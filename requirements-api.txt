@@ -1,0 +1,34 @@
+# Core API dependencies only — no PyTorch/sentence-transformers for Render free tier
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-google-genai
+langchain-groq
+langchain-chroma
+langgraph
+
+# API Server
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+python-dotenv
+
+# Vector DBs
+chromadb
+faiss-cpu
+
+# Code parsing
+tree-sitter
+tree-sitter-python
+tree-sitter-javascript
+networkx
+
+# Utilities
+gitpython
+beautifulsoup4
+pygments
+requests
+tiktoken
+rope>=1.13.0
