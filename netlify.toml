@@ -6,7 +6,5 @@
 [build.environment]
   NEXT_PUBLIC_API_URL = "https://codecritic-api.onrender.com"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
