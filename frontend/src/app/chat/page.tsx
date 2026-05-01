@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
 import { Send, Bot, User, FileCode, Sparkles } from 'lucide-react';
+import { api } from '@/lib/api';
 
 interface Message {
     id: string;
@@ -40,13 +41,7 @@ export default function ChatPage() {
         setIsLoading(true);
 
         try {
-            const response = await fetch('http://localhost:8000/api/chat', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: input }),
-            });
-
-            const data = await response.json();
+            const data = await api.chat(input);
 
             const assistantMessage: Message = {
                 id: (Date.now() + 1).toString(),

@@ -1,0 +1,12 @@
+[build]
+  base = "frontend"
+  command = "npm install && npm run build"
+  publish = ".next"
+
+[build.environment]
+  NEXT_PUBLIC_API_URL = "https://codecritic-api.onrender.com"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
