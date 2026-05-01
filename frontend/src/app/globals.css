@@ -1,3 +1,6 @@
+/* Custom Fonts — must be first */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
 @import "tailwindcss";
 
 /* Theme tokens */
@@ -20,9 +23,6 @@
   --animate-aurora: aurora 10s infinite linear;
   --animate-pulse-glow: pulse-glow 2s infinite ease-in-out;
 }
-
-/* Custom Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 body {
   background-color: var(--color-background);
@@ -48,7 +48,7 @@ body {
   filter: blur(80px);
 }
 
-/* Grain Overly for Texture */
+/* Grain Overlay for Texture */
 .bg-grain {
   position: fixed;
   top: 0;
@@ -97,7 +97,6 @@ body {
 }
 
 @keyframes pulse-glow {
-
   0%,
   100% {
     opacity: 0.5;
